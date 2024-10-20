@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<scrip lang="TR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sinema Koltuk Seçimi</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="screen"></div>
+			<div class="seat-container">
+				<ol>
+					<li class="seat-order">A</li>
+					<li class="seat">1</li>
+					<li class="seat reserved">2</li>
+					<li class="seat">3</li>
+					<li class="seat">4</li>
+					<li class="seat">5</li>
+					<li class="seat">6</li>
+					<li class="seat">7</li>
+					<li class="seat">8</li>
+				</ol>
+				<ol>
+					<li class="seat-order">B</li>
+					<li class="seat">1</li>
+					<li class="seat">2</li>
+					<li class="seat">3</li>
+					<li class="seat">4</li>
+					<li class="seat">5</li>
+					<li class="seat">6</li>
+					<li class="seat">7</li>
+					<li class="seat">8</li>
+				</ol>
+				<ol>
+					<li class="seat-order">C</li>
+					<li class="seat">1</li>
+					<li class="seat">2</li>
+					<li class="seat">3</li>
+					<li class="seat">4</li>
+					<li class="seat">5</li>
+					<li class="seat">6</li>
+					<li class="seat">7</li>
+					<li class="seat">8</li>
+				</ol>
+				<ol>
+					<li class="seat-order">D</li>
+					<li class="seat">1</li>
+					<li class="seat">2</li>
+					<li class="seat">3</li>
+					<li class="seat">4</li>
+					<li class="seat">5</li>
+					<li class="seat">6</li>
+					<li class="seat">7</li>
+					<li class="seat">8</li>
+				</ol>
+			</div>
+			<select>
+				<option  hidden >Lütfen bir film seçiniz</option>
+				<option value="20">Film 1</option>
+				<option value="25">Film 2</option>
+				<option value="30">Film 3</option>
+			</select>
+			<div class="seat-situation-container">
+				<div class="seat-sutation-column">
+					<div class="seat-situation seat"></div>
+					<span class="seat-situation-text">Boş</span>
+				</div>
+				<div class="seat-sutation-column">
+					<div class="seat-situation selected"></div>
+					<span class="seat-situation-text">Seçili</span>			
+				</div>
+				<div class="seat-sutation-column">
+					<div class="seat-situation reserved"></div>
+					<span class="seat-situation-text">Dolu</span>
+				</div>
+			</div>
+			<div class="seat-information">
+				<span class="seat-count">0</span> koltuk seçildi ve toplam ücret <span class="seat-price-symbol"><span id="seat-price">0</span>TL</span>
+			</div>
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>

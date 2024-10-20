@@ -1,0 +1,120 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(29, 29, 29);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.screen {
+	width: 100%;
+	height: 65px;
+	background-color: #f2f2f2;
+	margin: 0 0 20px 0;
+	box-shadow: 0 0 40px #e3e3e3;
+}
+
+ol {
+	display: flex;
+	justify-content: center;
+}
+
+li {
+	color: #f2f2f2;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+li:nth-of-type(3),
+li:nth-last-of-type(4) {
+	margin-right: 15px;
+}
+
+select {
+	width: 170px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.seat {
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+	background-color: #04a727;
+	margin: 3px;
+}
+
+.seat:not(.reserved):hover {
+	cursor: pointer;
+	transform: scale(1.3);
+}
+
+.seat.selected,
+.selected {
+	background-color: #d7c91a;
+}
+
+.seat.reserved,
+.reserved {
+	color: black;
+	background-color: #d91a1a;
+}
+
+.seat-order {
+	margin-right: 5px;
+	color: white;
+}
+
+.seat-situation-container {
+	width: 100%;
+	background-color: #383838e3;
+	border-radius: 7px;
+	display: flex;
+}
+
+.seat-sutation-column {
+	margin: 6px 16px 6px 11px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.seat-situation {
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+}
+.seat-situation-text {
+	font-size: 15px;
+	color: #fff;
+	margin: 2px 0 0 4px;
+}
+
+.seat-information {
+	width: 260px;
+	height: 25px;
+	margin-top: 15px;
+	color: #fff;
+	text-align: center;
+}
+
+.seat-count,
+.seat-price-symbol {
+	color: #fda300;
+}
